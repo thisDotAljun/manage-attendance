@@ -7,7 +7,7 @@
     </p>
   </aside>
   <section class="border border-black w-full p-5">
-    <h1>section</h1>
+    <h1 class="font-bold">Section</h1>
   </section>
 </template>
 
