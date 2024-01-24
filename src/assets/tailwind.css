@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    border-width: 0;
+    border-style: solid;
+    border-color: theme('borderColor.DEFAULT', currentColor);
+  }
+
+  hr {
+    @apply border border-slate-200;
+  }
+
+  main {
+    @apply flex border border-black h-full;
+  }
+
+}
+
+@layer components {
+  #app {
+    @apply flex flex-col border-4 border-emerald-500 h-screen
+  }
+}
