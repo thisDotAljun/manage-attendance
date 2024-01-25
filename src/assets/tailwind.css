@@ -16,13 +16,36 @@
   }
 
   main {
-    @apply flex border border-black h-full;
+    @apply flex h-full;
+  }
+
+  header {
+    @apply bg-header-color py-[19px] px-[30px]
+  }
+
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
 }
 
 @layer components {
   #app {
-    @apply flex flex-col border-4 border-emerald-500 h-screen
+    @apply flex flex-col h-screen
+  }
+}
+
+@layer components {
+  .button-class {
+    @apply w-full bg-white text-mid-neutral-200 text-left p-[16px] font-bold text-[16px] capitalize hover:bg-success-bg hover:text-dark-neutral-500 hover:cursor-pointer focus:bg-success-bg focus:text-dark-neutral-500 duration-500
+  }
+  .text-nav-color {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word
   }
 }
