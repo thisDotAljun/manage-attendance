@@ -19,3 +19,9 @@ export const formatDateString = (inputString) => {
 
   return formattedDate;
 };
+
+export const reformatDate = (dateString) => {
+  var dateObject = new Date(dateString);
+  var options = { month: '2-digit', day: '2-digit', year: 'numeric' };
+  return dateObject.toLocaleDateString('en-US', options);
+}

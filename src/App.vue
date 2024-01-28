@@ -4,35 +4,35 @@
       <Logo/>
       <div class="relative flex items-center space-x-2">
         <div class="flex justify-content-center">
-          <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="My Request" class="w-full bg-transparent" :pt="{
+          <Dropdown v-model="dropdwonState" :options="dropdownContainer" optionLabel="name" placeholder="My Request" class="w-full bg-transparent" :pt="{
             input: 'p-2 bg-transparent text-nav-color',
             dropdownicon: 'text-nav-color',
             root: 'ring-0'
           }" />
         </div>
         <div class="flex justify-content-center">
-          <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="My Team" class="w-full bg-transparent" :pt="{
+          <Dropdown v-model="dropdwonState" :options="dropdownContainer" optionLabel="name" placeholder="My Team" class="w-full bg-transparent" :pt="{
             input: 'p-2 bg-transparent text-nav-color',
             dropdownicon: 'text-nav-color',
             root: 'ring-0'
           }" />
         </div>
         <div class="flex justify-content-center">
-          <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Company" class="w-full bg-transparent" :pt="{
+          <Dropdown v-model="dropdwonState" :options="dropdownContainer" optionLabel="name" placeholder="Company" class="w-full bg-transparent" :pt="{
             input: 'p-2 bg-transparent text-nav-color',
             dropdownicon: 'text-nav-color',
             root: 'ring-0'
           }" />
         </div>
         <div class="flex justify-content-center">
-          <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Administration Tools" class="w-full bg-transparent" :pt="{
+          <Dropdown v-model="dropdwonState" :options="dropdownContainer" optionLabel="name" placeholder="Administration Tools" class="w-full bg-transparent" :pt="{
             input: 'p-2 bg-transparent text-nav-color',
             dropdownicon: 'text-nav-color',
             root: 'ring-0'
           }" />
         </div>
         <div class="flex justify-content-center">
-          <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Maintenance" class="w-full bg-transparent" :pt="{
+          <Dropdown v-model="dropdwonState" :options="dropdownContainer" optionLabel="name" placeholder="Maintenance" class="w-full bg-transparent" :pt="{
             input: 'p-2 bg-transparent text-nav-color',
             dropdownicon: 'text-nav-color',
             root: 'ring-0'
@@ -48,7 +48,7 @@
           <div class="inline-flex items-center space-x-2">
             <h1 class="text-white bg-[#C4C4C4] p-3.5 rounded-full"></h1>
             <div class="flex justify-content-center">
-              <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Admin" class="w-full bg-transparent" :pt="{
+              <Dropdown v-model="dropdwonState" :options="dropdownContainer" optionLabel="name" placeholder="Admin" class="w-full bg-transparent" :pt="{
                 input: 'p-2 bg-transparent text-nav-color',
                 dropdownicon: 'text-nav-color',
                 root: 'ring-0'
@@ -72,13 +72,7 @@ import Dropdown from 'primevue/dropdown';
 // import InputText from 'primevue/inputtext';
 
 const searchState = ref(null);
-const selectedCity = ref();
-const cities = ref([
-    { name: 'New York', code: 'NY' },
-    { name: 'Rome', code: 'RM' },
-    { name: 'London', code: 'LDN' },
-    { name: 'Istanbul', code: 'IST' },
-    { name: 'Paris', code: 'PRS' }
-]);
+const dropdwonState = ref();
+const dropdownContainer = ref([]);
 </script>
 
