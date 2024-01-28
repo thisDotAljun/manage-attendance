@@ -5,7 +5,9 @@ export default {
     extend: {
       colors: {
         "light-neutral" : "#FFFFFF",
-        "light-neutral-40" : "#C3CDC9", 
+        "light-neutral-10" : "#F0F2F2",
+        "light-neutral-40" : "#C3CDC9",
+        "light-neutral-50" : "#B4C0BC",
         "light-neutral-80" : "#879A94",
         "mid-neutral-200" : "#5A756B",
         "mid-neutral-90" : "#788E86",
@@ -16,7 +18,7 @@ export default {
         "green" : "#17AD49", 
         "blue" : "#0F6EEB",
         "header-color" : "#333333",
-        "nav-color" : "#DDDDDD"
+        "nav-color" : "#DDDDDD",
       }
     }
   },

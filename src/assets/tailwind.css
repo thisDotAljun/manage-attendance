@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply flex-initial h-screen overflow-hidden;
+  }
+  body {
+    @apply h-full;
+  }
   *,
   ::before,
   ::after {
@@ -10,26 +16,21 @@
     border-style: solid;
     border-color: theme('borderColor.DEFAULT', currentColor);
   }
-
   hr {
-    @apply border border-slate-200;
+    @apply border border-slate-200 ;
   }
-
   main {
-    @apply flex h-full;
+    @apply flex h-full max-h-full border-4 border-cyan-500;
   }
-
   header {
-    @apply bg-header-color py-[19px] px-[30px]
+    @apply bg-header-color py-[18px] px-[30px]
   }
-
   ol,
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-
 }
 
 @layer components {
@@ -40,7 +41,7 @@
 
 @layer components {
   .button-class {
-    @apply w-full bg-white text-mid-neutral-200 text-left p-[16px] font-bold text-[16px] capitalize hover:bg-success-bg hover:text-dark-neutral-500 hover:cursor-pointer focus:bg-success-bg focus:text-dark-neutral-500 duration-500
+    @apply w-full bg-white text-mid-neutral-200 text-left p-4 font-bold text-[16px] capitalize hover:bg-success-bg hover:text-dark-neutral-500 hover:cursor-pointer focus:bg-success-bg focus:text-dark-neutral-500 duration-500
   }
   .text-nav-color {
     font-size: 16px;
@@ -48,4 +49,17 @@
     line-height: 24px;
     word-wrap: break-word
   }
+
+  [data-pc-section="box"] {
+    @apply border border-gray-300
+  }
+
+  #app {
+    @apply h-full;
+  }
+
+  /* [for="ms-cities"] {
+    margin-top: -6px;
+  } */
+  
 }
