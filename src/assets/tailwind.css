@@ -4,10 +4,10 @@
 
 @layer base {
   html {
-    @apply flex-initial h-screen overflow-hidden;
+    @apply relative h-screen overflow-hidden;
   }
   body {
-    @apply h-full;
+    @apply h-screen flex items-center justify-center;
   }
   *,
   ::before,
@@ -20,10 +20,10 @@
     @apply border border-slate-200 ;
   }
   main {
-    @apply flex h-full max-h-full border-4 border-cyan-500;
+    @apply flex h-full;
   }
   header {
-    @apply bg-header-color py-[18px] px-[30px]
+    @apply bg-header-color py-4 px-8
   }
   ol,
   ul {
@@ -34,14 +34,11 @@
 }
 
 @layer components {
-  #app {
-    @apply flex flex-col h-screen
-  }
-}
-
-@layer components {
   .button-class {
-    @apply w-full bg-white text-mid-neutral-200 text-left p-4 font-bold text-[16px] capitalize hover:bg-success-bg hover:text-dark-neutral-500 hover:cursor-pointer focus:bg-success-bg focus:text-dark-neutral-500 duration-500
+    @apply w-full bg-white text-mid-neutral-200 text-left font-bold text-[16px] hover:text-dark-neutral-500 capitalize p-4 hover:cursor-pointer duration-300
+  }
+  #app {
+    @apply flex flex-col w-full h-full overflow-hidden;
   }
   .text-nav-color {
     font-size: 16px;
@@ -49,17 +46,11 @@
     line-height: 24px;
     word-wrap: break-word
   }
-
   [data-pc-section="box"] {
     @apply border border-gray-300
   }
-
-  #app {
-    @apply h-full;
+  [data-pc-section="option"], [data-pc-section="itemlabel"] {
+    @apply capitalize
   }
-
-  /* [for="ms-cities"] {
-    margin-top: -6px;
-  } */
   
 }

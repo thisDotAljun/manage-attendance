@@ -19,6 +19,7 @@ export default {
         "blue" : "#0F6EEB",
         "header-color" : "#333333",
         "nav-color" : "#DDDDDD",
+        "orange-text" : "#FF7F00"
       }
     }
   },

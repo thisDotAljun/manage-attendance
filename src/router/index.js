@@ -6,9 +6,16 @@ const router = createRouter({
     {
       path: '/',
       name: 'manage_attendance',
-      component: () => import('../views/ManageAttendance.vue')
+      component: () => import('../views/ManageAttendance.vue'),
+      meta: {
+        title: 'Manage Attendance'
+      },
     },
   ]
+})
+
+router.beforeEach((to) => {
+  document.title = to.meta.title;
 })
 
 export default router
